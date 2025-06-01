@@ -1,4 +1,9 @@
 
+h1, p {
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+
 body {
     background-color: black;
     color: tomato;
@@ -8,6 +13,9 @@ body {
 }
 
 .scene {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
   width: 200px;
   height: 200px;
   perspective: 800px;
@@ -83,4 +91,17 @@ body {
         opacity: 1;
         scale: 1;
     }
+}
+
+
+/* animazioni particelle */
+
+#tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* dietro a tutto */
+    background-color: black;
 }
